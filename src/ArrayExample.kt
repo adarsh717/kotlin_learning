@@ -12,6 +12,7 @@ fun main(){
     array.set(2,10)
 
     // Array after set the second index value explicitly.
-    print("value after set : ${array[2]}")
+    println("value after set : ${array[2]}")
+    print(array.joinToString())
 
 }
