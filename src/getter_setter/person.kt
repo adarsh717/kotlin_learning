@@ -1,7 +1,9 @@
+package getter_setter
+
 fun main(){
    var a= Person3()
     a.age=-10 // internally called setter method.
-    println(a.age) // internally called getter method
+    println(a.age) // internally called getter_setter.getter method
 
 }
 class Person3 {

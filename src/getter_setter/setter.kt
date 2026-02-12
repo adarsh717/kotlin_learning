@@ -1,3 +1,5 @@
+package getter_setter
+
 fun main(){
     var gt=getter()
     gt.age=12

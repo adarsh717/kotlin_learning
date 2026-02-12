@@ -1,3 +1,5 @@
+package getter_setter
+
 fun main(){
     var m=markssetter()
     m.marks=80
