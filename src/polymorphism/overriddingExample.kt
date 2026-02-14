@@ -1,4 +1,4 @@
-package inheritence
+package polymorphism
 fun main(){
     var dog= Dog()
     println(dog.name
