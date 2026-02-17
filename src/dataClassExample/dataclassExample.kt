@@ -1,3 +1,5 @@
+package dataClassExample
+
 fun main(){
     val prod1=Product("Milk",50.0,2)
     println(prod1)
