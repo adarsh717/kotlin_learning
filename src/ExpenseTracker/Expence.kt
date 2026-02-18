@@ -8,6 +8,7 @@ fun main(){
     em.addExpenses(4,"Freelance",2500.0, TransactionType.INCOME)
     println("Total Income: ${em.getTotalIncome()}")
     println("Total Expense: ${em.getTotalExpense()}")
+    println("Remaining: ${em.getBalance()}")
 }
 
 data class Expense(
@@ -29,6 +30,7 @@ open class ExpenseManager{
         transaction.add(Expense(id,title,amount,type))
     }
 
+
     fun getTotalIncome(): Double{
         var total=0.0
 
@@ -48,6 +50,11 @@ open class ExpenseManager{
             }
         }
         return total
+    }
+    fun getBalance(): Double{
+        var income=getTotalIncome()
+        var expense=getTotalExpense()
+        return income-expense
     }
 
 }
