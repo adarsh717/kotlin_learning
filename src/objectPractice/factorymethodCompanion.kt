@@ -1,10 +1,10 @@
 package objectPractice
 fun main(){
-    var a=Person.create("student")
+    var a=Person.Factory.create("student")
     print(a.type)
 }
 class Person(val type: String){
-    companion object{
+    object Factory{
         fun create(type: String): Person{
             return when(type){
                 "student"-> Person("student")
