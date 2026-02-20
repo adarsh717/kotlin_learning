@@ -1,11 +1,8 @@
 package nullSafety
 
-var name1: String?=null
-
-// it only executes when string is not null..
-
+var myName: String?="Adarsh"
 fun main(){
-    name1?.let {
+    myName?.let {
         println(it.length)
     }
 }
