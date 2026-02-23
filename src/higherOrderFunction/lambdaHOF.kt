@@ -1,7 +1,5 @@
 package higherOrderFunction
 
-import java.awt.Desktop
-
 fun operateNumber(a: Int, action: (Int)-> Int){
    println(action(a))
 }
